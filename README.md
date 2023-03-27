@@ -9,5 +9,5 @@ docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins
 git init
 git add .
 git commit -m "Add existing project files to Git"
-git remote add origin https://github.com/pdngayan/boc-demo-backend.git
-https://github.com/pdngayan/boc-demo-frontend-.git
+git remote add origin https://github.com/pdngayan/boc-demo-frontend-.git
+git push --set-upstream origin main 
