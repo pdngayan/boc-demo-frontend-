@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      bb: frontend
+  template:
+    metadata:
+      labels:
+        bb: frontend
+    spec:
+      containers:
+        - name: frontend
+          image: pdngayan1/frontend
+          imagePullPolicy: Never
