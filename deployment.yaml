@@ -7,13 +7,13 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      bb: frontend
+      app: frontend
   template:
     metadata:
       labels:
-        bb: frontend
+        app: frontend
     spec:
       containers:
         - name: frontend
           image: pdngayan1/frontend
-          imagePullPolicy: Never
+          imagePullPolicy: Always
