@@ -8,4 +8,3 @@ RUN yarn install  --silent
 COPY . ./
 CMD ["yarn", "start"]
 
-#######Hello I'm Ncinga
