@@ -7,3 +7,4 @@ RUN npm install yarn@v1.12.1 --silent
 RUN yarn install  --silent
 COPY . ./
 CMD ["yarn", "start"]
+
